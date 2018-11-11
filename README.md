@@ -1,11 +1,11 @@
-# Project 01 : Arduino Traffic Light
+[image1]: ./images/traffic_light.png
+
+# Annex 02 : Raspberry Basics
 
 One Paragraph of project description goes here. Change done.
 
 * first bullet point
 * second bullet point
-
-[image1]: ./images/traffic_light.png
 
 this is the first image
 
