@@ -45,7 +45,7 @@ The image below shows the different pins of a Raspberry Pi 3 and how they can be
 
 ![alt text][image3]
 
-## 04. Programming an Arduino
+## 04. Programming a Raspberry Pi
 
 The language used to program the microcontrollers has very similar characteristics to C and C++. Therefore, if you have already programmed in either of these languages you should not have any particular issue.
 
