@@ -33,7 +33,7 @@ For our project, however, we do not need the full computational power and pins o
 
 ## 03. Raspberry Pi 3 pins
 
-All Arduino boards are equipped with sets of pins. The pins can be connected to a variety of sensors, motors, and other devices. The pins are of two types:
+The Raspberry Pi is equipped with a set of pins. The pins can be connected to a variety of sensors, motors, and other devices. The pins are of two types:
 * digital, and
 * analog
 
@@ -41,7 +41,7 @@ Furthermore, the pins can be used in two different ways, either as:
 * input, or
 * output
 
-The image below shows the different pins of an Arduino Micro and how they can be used.
+The image below shows the different pins of a Raspberry Pi 3 and how they can be used.
 
 ![alt text][image3]
 
