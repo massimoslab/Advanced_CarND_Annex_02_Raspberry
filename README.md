@@ -1,6 +1,6 @@
 [image1]: ./images/raspberry_pi_3.jpg
-[image2]: ./images/arduino_micro.jpg
-[image3]: ./images/arduino_micro_pins.jpg
+[image2]: ./images/raspberry_pi_zero.jpg
+[image3]: ./images/raspberry_pi_pins.png
 
 # Annex 01 : Raspberry Pi Basics
 
@@ -31,9 +31,7 @@ For our project, however, we do not need the full computational power and pins o
 
 ![alt text][image2]
 
-There are many other devices that belon to the Arduino family such as: the Arduino Due, Leonardo, Mega, Nano, Zero, M0 and many more.
-
-## 03. Arduino Micro pins
+## 03. Raspberry Pi 3 pins
 
 All Arduino boards are equipped with sets of pins. The pins can be connected to a variety of sensors, motors, and other devices. The pins are of two types:
 * digital, and
