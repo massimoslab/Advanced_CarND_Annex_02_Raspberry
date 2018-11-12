@@ -1,96 +1,86 @@
-[image1]: ./images/traffic_light.png
+[image1]: ./images/raspberry_pi_3.jpg
+[image2]: ./images/arduino_micro.jpg
+[image3]: ./images/arduino_micro_pins.jpg
 
-# Annex 02 : Raspberry Basics
+# Annex 01 : Raspberry Pi Basics
 
-One Paragraph of project description goes here. Change done.
+In this Annex we will explore some of the basics of the Raspberry Pi. More specifically, we will look at:
 
-* first bullet point
-* second bullet point
+* the Raspberry Pi device itself
+* the programming language used for the Raspberry Pi
+* an example of project made with a Raspberry Pi
 
-this is the first image
+## 01. The Raspberry Pi
+
+The Raspberry Pi is essentially a computer running on Linux. Like the Arduino, the Raspberry Pi has also several pins in order to:
+* process data that are provided as an input to the Raspberry Pi through its input pins, or
+* process data so that a signal can be sent to external device through its output pins.
+
+The Raspberry Pi's processor can be compared to that of many computers. The power of the Raspberry Pi is its ability perform multiple tasks. In our case these tasks will be:
+* performing computer vision analysis through images provided via a camera
+* allow to remotely control the self driving car through the keyboard
+* connect complex sensors such as accelerometers, LIDARs, RADARs, GPS, etc.
+
+## 02. The Raspberry Pi devices
+
+The most commonly used Raspberry is the Raspberry Pi 3, shown in the image below:
 
 ![alt text][image1]
 
-## 01. Getting Started
+For our project, however, we do not need the full computational power and pins of the Arduino Uno and we can, therefore, use a cheaper version: the Arduino Micro. The image below shows the Arduino Micro:
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+![alt text][image2]
 
-### Prerequisites
+There are many other devices that belon to the Arduino family such as: the Arduino Due, Leonardo, Mega, Nano, Zero, M0 and many more.
 
-What things you need to install the software and how to install them
+## 03. Arduino Micro pins
 
-```
-Give examples
-```
+All Arduino boards are equipped with sets of pins. The pins can be connected to a variety of sensors, motors, and other devices. The pins are of two types:
+* digital, and
+* analog
 
-### Installing
+Furthermore, the pins can be used in two different ways, either as:
+* input, or
+* output
 
-A step by step series of examples that tell you how to get a development env running
+The image below shows the different pins of an Arduino Micro and how they can be used.
 
-Say what the step will be
+![alt text][image3]
 
-```
-Give the example
-```
+## 04. Programming an Arduino
 
-And repeat
+The language used to program the microcontrollers has very similar characteristics to C and C++. Therefore, if you have already programmed in either of these languages you should not have any particular issue.
 
-```
-until finished
-```
-
-End with an example of getting some data out of the system or using it for a little demo
-
-## 02. Running the tests
-
-Explain how to run the automated tests for this system
-
-### Break down into end to end tests
-
-Explain what these tests test and why
+Below is a "Hello World" code for the Arduino.
 
 ```
-Give an example
+void setup() {
+  Serial.begin(9600);
+}
+
+void loop() {
+  Serial.println("Hello World!");
+}
 ```
 
-### And coding style tests
+#### Understanding the code
 
-Explain what these tests test and why
+The **void setup()** function is run first with its content between brackets. The **Serial.begin(9600)** sets up the speed of the serial port to 9600 baud. The baud setting in the serial monitor window must match this value so that the Arduino and serial monitor window are communicating at the same speed.
 
-```
-Give an example
-```
+The **void loop()** function is run second with all its content between brackets.
+The **Serial.println("Hello, world!")** sends the text *Hello World!* to the serial / USB port for display in the serial monitor window.
 
-## 03. Deployment
+## 05. Purchases and Downloads
+The Arduino can be purchased from the following link:
+[Purchase an Arduino here](https://store.arduino.cc/)
 
-Add additional notes about how to deploy this on a live system
+The Arduino IDE can be downloaded from the following link:
+[Download the Arduino IDE here](https://www.arduino.cc/en/Main/Software)
 
-## 04. Built With
+## Author
 
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
-
-## Contributing
-
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
-
-## Versioning
-
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags).
-
-## Authors
-
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
-
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
+**Massimo Passamonti**: [email me](mailto:mpweb2.0@gmail.com)
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
-
-## Acknowledgments
-
-* Hat tip to anyone whose code was used
-* Inspiration
-* etc
+This project and its source code are licensed under the MIT License. [See MIT License](https://github.com/github/choosealicense.com/blob/gh-pages/LICENSE.md) file for details.
