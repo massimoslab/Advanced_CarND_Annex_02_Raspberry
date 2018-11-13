@@ -1,8 +1,8 @@
 [image1]: ./images/raspberry_pi_3.jpg
 [image2]: ./images/raspberry_pi_zero.jpg
-[image3]: ./images/raspberry_pi_pins.png
+[image3]: ./images/raspberry_pi_pins.jp
 
-# Annex 01 : Raspberry Pi Basics
+# Annex 02 : Raspberry Pi Basics
 
 In this Annex we will explore some of the basics of the Raspberry Pi. More specifically, we will look at:
 
@@ -47,37 +47,29 @@ The image below shows the different pins of a Raspberry Pi 3 and how they can be
 
 ## 04. Programming a Raspberry Pi
 
-The language used to program the microcontrollers has very similar characteristics to C and C++. Therefore, if you have already programmed in either of these languages you should not have any particular issue.
+A Raspberry Pi can used to write programs in different programming languages as with any other computer. Python is by far the most widely used programming language and you will find several examples in internet. The power of python lies mainly in the many libraries which are freely available to be installed. These libraries allow you to use pre-written functions and procedures so that you can focus more on your project.
 
-Below is a "Hello World" code for the Arduino.
+If you have prior experience in programming, python will be very intuitive to use. Below is a "Hello World" code for the Raspberry Pi.
 
 ```
-void setup() {
-  Serial.begin(9600);
-}
-
-void loop() {
-  Serial.println("Hello World!");
-}
+message = "Hello World!"
+for i in range(10):
+    print(message)
 ```
 
 #### Understanding the code
 
-The **void setup()** function is run first with its content between brackets. The **Serial.begin(9600)** sets up the speed of the serial port to 9600 baud. The baud setting in the serial monitor window must match this value so that the Arduino and serial monitor window are communicating at the same speed.
+The **message = "Hello World!"** line of code assigns the text inside the brackets (*Hello World!*) to the variable **message**. There is no need to define the variable **message** as a sting variable beforehand; python understand this automatically.
 
-The **void loop()** function is run second with all its content between brackets.
-The **Serial.println("Hello, world!")** sends the text *Hello World!* to the serial / USB port for display in the serial monitor window.
+The second and third line of the above code is a so-called for-loop. The variable **i** will assume all values between 0 and 10 (10 excluded) and will execute what is defined in the third line, which will print the text contained in the variable **message**.
 
 ## 05. Purchases and Downloads
-The Arduino can be purchased from the following link:
-[Purchase an Arduino here](https://store.arduino.cc/)
-
-The Arduino IDE can be downloaded from the following link:
-[Download the Arduino IDE here](https://www.arduino.cc/en/Main/Software)
+The Raspberry Pi can be purchased from the following link:
+[Purchase a Raspberry Pi here](https://www.raspberrypi.org/products/)
 
 ## Author
 
-**Massimo Passamonti**: [email me](mailto:mpweb2.0@gmail.com)
+**Massimo Passamonti**: [email me](me@massimoslab.com)
 
 ## License
 
