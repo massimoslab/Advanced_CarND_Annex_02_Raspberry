@@ -63,7 +63,21 @@ The **message = "Hello World!"** line of code assigns the text inside the bracke
 
 The second and third line of the above code is a so-called for-loop. The variable **i** will assume all values between 0 and 10 (10 excluded) and will execute what is defined in the third line, which will print the text contained in the variable **message**.
 
-## 05. Purchases and Downloads
+## 05. Raspberry Pi setup
+The setup of a Raspberry Pi to be used in these projects is a bit more complicated than the setup you would follow for a simpler use of the device.
+
+#### The operating system
+The first point to understand is that the Raspberry Pi can run on several operating systems. The ones recommended by the Raspberry Pi foundation are:
+1. NOOBS, which stands for New Out Of the Box Software; or
+2. Raspian, which is the official operating system.
+
+NOOBS is usually recommended if a user is new to the Raspberry Pi, but in the context of this Self-Driving Car course, the use of Raspian is necessary because it is the only OS that support several libraries that will be used in the course of the project. The first thing to do is to go to the [Raspberry Pi Foundation Download](https://www.raspberrypi.org/downloads/) page and follow installation instructions to install Raspian.
+
+#### The libraries
+
+
+
+## 06. Purchases and Downloads
 The Raspberry Pi can be purchased from the following link:
 [Purchase a Raspberry Pi here](https://www.raspberrypi.org/products/)
 
